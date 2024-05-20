@@ -1,7 +1,11 @@
 import React from "react";
+import "../css/index.css";
+import Rating from "./Rating"
 
 export default function App() {
     return (
-        <h1>Hello world!</h1>
+        <div className="w-full h-screen bg-veryDarkBlue">
+            <Rating />
+        </div>
     );
 }
