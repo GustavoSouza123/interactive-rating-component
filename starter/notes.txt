@@ -1,0 +1,15 @@
+Rating({ submit=false })
+  submit 
+  ?
+   Text({ title="" paragraph="" center=false })
+   Options
+   Button
+  :
+   Image
+   Selection({ option })
+   Text({ title="" paragraph="" center=true })
+
+
+* state in the Rating component
+option=null
+submit=false

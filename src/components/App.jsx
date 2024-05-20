@@ -4,7 +4,7 @@ import Rating from "./Rating"
 
 export default function App() {
     return (
-        <div className="w-full h-screen bg-veryDarkBlue">
+        <div className="w-full h-screen bg-veryDarkBlue flex justify-center items-center">
             <Rating />
         </div>
     );
