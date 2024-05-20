@@ -11,7 +11,7 @@ export default function Rating() {
     const [isSubmitted, setSubmitted] = useState(false);
 
     return (
-        <div className="w-[410px] h-[415px] bg-darkBlue rounded-[30px] flex flex-col gap-[30px] p-8 text-white">
+        <div className="w-[410px] h-[415px] bg-gradient-to-b from-darkBlue1 to-darkBlue2 rounded-[30px] flex flex-col gap-[30px] p-8 text-white">
             {isSubmitted ? (
                 <>
                     <Image />

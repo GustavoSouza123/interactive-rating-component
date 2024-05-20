@@ -11,8 +11,9 @@ export default {
         primary: "var(--orange)",
         white: "var(--white)",
         lightGrey: "var(--light-grey)",
-        darkBlue: "var(--dark-blue)",
-        veryDarkBlue: "var(--very-dark-blue)",
+        darkBlue1: "var(--dark-blue-1)",
+        darkBlue2: "var(--dark-blue-2)",
+        darkBlue3: "var(--dark-blue-3)",
       },
 
     },
