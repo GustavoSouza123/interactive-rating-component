@@ -8,12 +8,13 @@ export default {
     extend: {
       
       colors: {
-        primary: "var(--orange)",
-        white: "var(--white)",
-        lightGrey: "var(--light-grey)",
-        darkBlue1: "var(--dark-blue-1)",
-        darkBlue2: "var(--dark-blue-2)",
-        darkBlue3: "var(--dark-blue-3)",
+        "orange": "var(--orange)",
+        "white": "var(--white)",
+        "light-grey": "var(--light-grey)",
+        "dark-blue-0": "var(--dark-blue-0)",
+        "dark-blue-1": "var(--dark-blue-1)",
+        "dark-blue-2": "var(--dark-blue-2)",
+        "dark-blue-3": "var(--dark-blue-3)",
       },
 
     },
