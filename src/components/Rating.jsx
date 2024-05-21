@@ -32,7 +32,7 @@ export default function Rating() {
     }
 
     return (
-        <div className={`w-[410px] h-[415px] bg-gradient-to-b from-dark-blue-1 to-dark-blue-2 rounded-[30px] flex flex-col gap-[30px] ${isSubmitted ? 'py-11 px-9 items-center' : 'p-8'} text-white`}>
+        <div className={`max-w-[410px] min-w-[250px] h-[415px] bg-gradient-to-b from-dark-blue-1 to-dark-blue-2 text-white flex flex-col gap-[30px] rounded-[30px] ${isSubmitted ? 'py-11 px-9 max-[400px]:p-9 items-center' : 'p-8 max-[500px]:p-6'}`}>
             {isSubmitted ? (
                 <>
                     <div className="">
