@@ -10,10 +10,23 @@ import star from "../assets/icon-star.svg";
 export default function Rating() {
     const [option, setOption] = useState(null);
     const [isSubmitted, setSubmitted] = useState(false);
+    const [error, setError] = useState(false);
 
-    function handleOptionClick() {
-        setOption(1);
-        console.log(option);
+    function handleOptionClick(num) {
+        if(option === num) {
+            setOption(null);
+        } else {
+            setOption(num);
+        }
+    }
+
+    function handleSubmit() {
+        if(option === null) {
+            console.log('submit error')
+            setError(true);
+        } else {
+            setSubmitted(true);
+        }
     }
 
     return (
@@ -30,8 +43,8 @@ export default function Rating() {
                         <img src={star} alt="star image" />
                     </div>
                     <Text title="How did we do?" paragraph="Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!" />
-                    <Options onClick={() => handleOptionClick()} />
-                    <Button />
+                    <Options onClick={handleOptionClick} active={option} error={error} />
+                    <Button onClick={handleSubmit} />
                 </>
             )}
         </div>

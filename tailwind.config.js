@@ -6,7 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      
       colors: {
         "orange": "var(--orange)",
         "white": "var(--white)",
@@ -16,7 +15,16 @@ export default {
         "dark-blue-2": "var(--dark-blue-2)",
         "dark-blue-3": "var(--dark-blue-3)",
       },
-
+      animation: {
+        error: 'error 1s linear'
+      },
+      keyframes: {
+        error: {
+          '0%': { borderColor: 'transparent' },
+          '50%': { borderColor: 'var(--orange)' },
+          '100%': { borderColor: 'transparent' }
+        }
+      },
     },
   },
   plugins: [],
