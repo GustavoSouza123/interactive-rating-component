@@ -1,8 +1,6 @@
 import React from "react";
 
-export default function Options({ onClick, active, error }) {
-    const options = [1, 2, 3, 4, 5];
-
+export default function Options({ onClick, options, active, error }) {
     return (
         <div className="w-full h-[50px] flex justify-between">
             {options.map(option => 
